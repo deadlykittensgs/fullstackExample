@@ -1,0 +1,19 @@
+ ### 
+
+ DELETE http://localhost:4999/delete/exampleKey?id=exampleKey
+
+###
+ POST http://localhost:4999/api/info?id=exampleKey
+ Content-Type: application/json
+
+ {
+    "information": "my name is "
+ }
+
+
+### 
+PUT http://localhost:4999/api/?word=ryan&banana=ripe?id=exampleKey
+
+
+###
+DELETE http://localhost:4999/delete/5/ryan?id=exampleKey

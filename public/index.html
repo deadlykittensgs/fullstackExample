@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>put what you want to display on the homepage in here</P>
+        <h1>this is the homepage</h1>
+    <button id="nice">
+post button
+    </button>
+    <script>
+        const button = document.getElementById("nice")
+        async function sendMsg() {
+            const res = await fetch('/api/info?id=exampleKey', {
+                method:'POST',
+                headers:{
+                    "content-Type":"application/json"
+                },
+                body: JSON.stringify({information: 'this is from the browser client'})
+            })
+            console.log("request sent")
+        }
+     button.addEventListener("click", sendMsg)   
+    </script>
+</body>
+</html>
+
+<!-- api key added to the post button or it will not work  -->

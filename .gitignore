@@ -1,0 +1,7 @@
+node_modules
+
+
+
+
+
+// this will make sure that git does not save the node node_modules in its repository
